@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      input:invalid {
+        border: red solid 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <form style="display: flex; flex-direction: column; max-width: 500px">
+      <label>Nombre</label>
+      <input type="text" />
+      <label>Apellidos</label>
+      <input type="text" />
+      <label>DNI</label>
+      <input type="text" pattern="[0-9]{8}[A-Z]{1}" />
+      <label>Telefono</label>
+      <input type="number" pattern="[0-9]{9}" />
+      <label>Email</label>
+      <input type="email" pattern="[A-Za-z0-9]+\@[A-Za-z]+\.[a-z]+" />
+      <label>Dirección</label>
+      <input type="text" />
+    </form>
+  </body>
+</html>
